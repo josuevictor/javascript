@@ -9,13 +9,18 @@
         body{
             background: rgb(10, 139, 172);
             color: white;
-            font: normal 10pt Arial;
+            font: normal 14pt Arial;
         }
     </style>
 </head>
 <body>
-    <h1>Iniciando os estudos de <strong>DOM</strong></h1>
+    <h1>Iniciando os estudos de DOM</h1>
     <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p> 
     <div>Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+    </script>
 </body>
-</html>
+</html>  
