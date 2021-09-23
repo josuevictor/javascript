@@ -6,40 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
     <style>
-        div#area{
-            font: normal 20pt Arial;
-            background: #2b4fc5;
+        div#circle{
+            font: normal 10pt Arial;
+            background: #041dffec;
             color: white;
             width: 200px;
             line-height: 200px;
             text-align: center; 
-            border-radius: 5%;
+            border-radius: 3%;
+            top: 15px;
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div id="area">
-        Clique aqui!
+    <div id="circle">
+        Passe o cursor do mouse aqui!!
     </div>
 
     <script>
-        var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout', sair)
-        
-        function clicar(){
-            a.innerText = 'clicou!'
-            a.style.background = 'red'
+        var c = window.document.getElementById('circle')
+        c.addEventListener('mouseenter', entrou)
+        c.addEventListener('mouseout', sair)
+        c.addEventListener('click', clicou)
+
+        function entrou(){
+            c.innerText = 'círculo'
+            c.style.borderRadius = '50%'
         }
 
-        function entrar(){
-            a.innerText = 'Entrou!'
+        function sair(){
+            c.innerText = 'quadrado'
+            c.style.borderRadius = '3%'
+            c.style.background = '#041dffec'
+
         }
-      function sair(){
-            a.innerText = 'Saiu!'
-            a.style.background = '#2b4fc5'
+
+        function clicou(){
+            c.innerText = 'Clicou!'
+            c.style.background = 'purple'
+            c.style.borderBottomLeftRadius = '20%'
         }
+
     </script>
 </body>
 </html>
