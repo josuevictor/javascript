@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nacionalityContainer">
+        <div id="nacionalityInput">
+            <label for="nacionality">Nacionality</label>
+            <input type="text" name="nacionality" id="nacionalityTxt" placeholder="Inform you nacionality" autocomplete="off">
+        </div>
+        <div id="btnVerify">
+            <input type="button" value="Verify" onclick="send()">
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+
+    <script>
+        function send(){
+            var txtNacionality = window.document.querySelector('input#nacionalityTxt')
+            var result = window.document.querySelector('div#result')
+            var nacionalidade = String(txtNacionality.value)
+            result.innerHTML = `Your nacionality is ${nacionalidade}`
+        }
+    </script>
+
+
+
+</body>
+</html>

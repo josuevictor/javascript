@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <div id="corpo">
+        <div id="limiteVel">
+            Velocidade máxima permitida: 80km/h 
+        </div>
+        <div id="vel">
+            <input type="number" name="txtvel" id="txtvel">
+        </div>
+        <div id="btn">
+            <input type="button" value="verificar" onclick="calcular()">
+        </div>
+        <div id="res">
+
+        </div>
+    </div>
+    <script>
+        
+
+        function calcular(){
+            var txtVel = window.document.querySelector('input#txtvel')/*pega o input e armazena em txtVel*/
+            var res = window.document.querySelector('div#res')/*Atribuiu res à divi#res*/
+            var vel =  Number(txtVel.value)/*vel vai receber o valor de txtVel*/
+            res.innerHTML = `<p>Velocidade: <strong>${vel}km/h</strong></p>`
+            if (vel > 80){
+                res.innerHTML = `Velocidade de ${vel}km/h. <strong>Multado!</strong>`
+            }
+            res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
