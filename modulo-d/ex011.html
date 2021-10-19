@@ -9,8 +9,8 @@
 <body>
     <div id="nacionalityContainer">
         <div id="nacionalityInput">
-            <label for="nacionality">Nacionality</label>
-            <input type="text" name="nacionality" id="nacionalityTxt" placeholder="Inform you nacionality" autocomplete="off">
+            <label for="nacionality">Nationality</label>
+            <input type="text" name="nationality" id="nationalityTxt" placeholder="Inform your nationality" autocomplete="off">
         </div>
         <div id="btnVerify">
             <input type="button" value="Verify" onclick="send()">
@@ -23,10 +23,10 @@
 
     <script>
         function send(){
-            var txtNacionality = window.document.querySelector('input#nacionalityTxt')
+            var txtNationality = window.document.querySelector('input#nationalityTxt')
             var result = window.document.querySelector('div#result')
-            var nacionalidade = String(txtNacionality.value)
-            result.innerHTML = `Your nacionality is ${nacionalidade}`
+            var nacionalidade = String(txtNationality.value)
+            result.innerHTML = `Your nationality is ${nacionalidade}`
         }
     </script>
 
