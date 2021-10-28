@@ -1,5 +1,5 @@
 var vet = []
-var insere = 0
+var insere = 1
 while (insere <= 20){
     vet.push(insere)
     insere++
@@ -7,4 +7,3 @@ while (insere <= 20){
 console.log(vet)
 console.log(`Tmanho do vetor: ${vet.length}`)
 let pos = console.log(vet.indexOf(12))
-console.log(``)
