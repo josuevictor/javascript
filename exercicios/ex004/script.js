@@ -15,6 +15,6 @@ function contar(){
     }
     //console.log('cont', cont)
     //console.log('fim',fim)
-    res.innerHTML = 'teste'
+    res.innerHTML = teste
 
 }
