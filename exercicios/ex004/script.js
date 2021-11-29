@@ -8,13 +8,12 @@ function contar(){
     var qtdPassos = passos.value;
     console.log('INÌCIO: ', ini);
     console.log('FIM:   ', fim);
-    //console.log('PASSOS: ', qtdPassos);
-    
-    for(cont=ini; cont <= fim ; cont++){
-        console.log('-> ' + cont);
+    console.log('PASSOS: ', qtdPassos);
+    if (qtdPassos > 1){
+        window.alert('Chama na bota')
+        for(cont=ini; cont <= fim ; (cont+qtdPassos)){
+            console.log('-> ', cont);
+        }
     }
-    //console.log('cont', cont)
-    //console.log('fim',fim)
-    res.innerHTML = teste
 
 }
