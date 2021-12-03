@@ -9,33 +9,31 @@ header{
 }
 
 section{
- background: rgb(241, 225, 225);
- border-radius: 10px;
- padding: 15px;
- width: 500px;
- margin: auto ;
- box-shadow:  5px 5px 10px #0000004d;
-
+    background: rgb(241, 225, 225);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto ;
+    box-shadow:  5px 5px 10px #0000004d;
 }
 
-.formulario{
+.form-tabuada{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 input[type='number']{
     width: 150px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #0000004d;
     -moz-appearance: textfield;
     appearance: textfield
 }
 
-.btn-contar{
-    width: 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 2px 2px 5px #0000004d;
+.result-tabuada{
+    width: 150px;
 }
 
 footer{
